@@ -1,0 +1,446 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Property Intelligence: West &amp; East New Launches | 6 Oct 2026</title><style>
+:root {
+--bg: #f8fafc;
+--card-bg: #ffffff;
+--text-main: #0f172a;
+--text-muted: #64748b;
+--border: #e2e8f0;
+--accent-blue: #0284c7;
+--accent-green: #15803d;
+--accent-amber: #b45309;
+--accent-red: #b91c1c;
+--badge-fit-bg: #dcfce7;
+--badge-fit-txt: #166534;
+--badge-watch-bg: #fef3c7;
+--badge-watch-txt: #92400e;
+--badge-out-bg: #fee2e2;
+--badge-out-txt: #991b1b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+background-color: var(--bg);
+color: var(--text-main);
+line-height: 1.45;
+padding: 24px 16px;
+}
+.container { max-width: 900px; margin: 0 auto; }
+.header-card {
+background: #0f172a;
+color: #ffffff;
+border-radius: 12px;
+padding: 28px 24px;
+margin-bottom: 24px;
+}
+.header-card .eyebrow {
+font-size: 0.75rem;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: #38bdf8;
+font-weight: 700;
+margin-bottom: 6px;
+}
+.header-card h1 {
+font-size: 1.6rem;
+font-weight: 800;
+line-height: 1.25;
+margin-bottom: 14px;
+}
+.mandate-pill-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+background: rgba(255, 255, 255, 0.12);
+border: 1px solid rgba(255, 255, 255, 0.2);
+padding: 6px 12px;
+border-radius: 6px;
+font-size: 0.82rem;
+font-weight: 500;
+}
+.pill span { color: #94a3b8; }
+.section-title {
+font-size: 1.15rem;
+font-weight: 800;
+color: var(--text-main);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin: 32px 0 14px 2px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.alert-banner {
+background: #fef2f2;
+border-left: 4px solid var(--accent-red);
+border-radius: 8px;
+padding: 14px 16px;
+margin-bottom: 24px;
+font-size: 0.9rem;
+color: #7f1d1d;
+}
+.alert-banner strong { color: #991b1b; }
+.note-banner {
+background: #f8fafc;
+border-left: 4px solid #94a3b8;
+border-radius: 8px;
+padding: 12px 16px;
+margin-bottom: 16px;
+font-size: 0.88rem;
+color: var(--text-muted);
+}
+.property-card {
+background: var(--card-bg);
+border: 1px solid var(--border);
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 16px;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.card-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 6px;
+gap: 10px;
+}
+.card-title {
+font-size: 1.15rem;
+font-weight: 700;
+color: var(--text-main);
+}
+.card-title a {
+color: inherit;
+text-decoration: none;
+border-bottom: 1px solid #cbd5e1;
+}
+.card-title a:hover { color: var(--accent-blue); }
+.badge {
+font-size: 0.72rem;
+font-weight: 800;
+padding: 4px 10px;
+border-radius: 999px;
+letter-spacing: 0.4px;
+white-space: nowrap;
+flex-shrink: 0;
+}
+.badge-fit { background: var(--badge-fit-bg); color: var(--badge-fit-txt); }
+.badge-watch { background: var(--badge-watch-bg); color: var(--badge-watch-txt); }
+.badge-out { background: var(--badge-out-bg); color: var(--badge-out-txt); }
+.card-subtitle {
+font-size: 0.82rem;
+color: var(--text-muted);
+margin-bottom: 14px;
+}
+.metric-bar {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+background: #f8fafc;
+border: 1px solid var(--border);
+border-radius: 6px;
+padding: 10px 12px;
+margin-bottom: 14px;
+gap: 8px;
+}
+.metric-cell { display: flex; flex-direction: column; }
+.metric-label {
+font-size: 0.7rem;
+text-transform: uppercase;
+font-weight: 700;
+color: var(--text-muted);
+margin-bottom: 2px;
+}
+.metric-val {
+font-size: 0.88rem;
+font-weight: 700;
+color: var(--text-main);
+}
+.metric-val.highlight { color: var(--accent-blue); }
+.takeaway-box {
+border-top: 1px dashed var(--border);
+padding-top: 10px;
+font-size: 0.85rem;
+color: var(--text-main);
+line-height: 1.4;
+}
+.table-container {
+background: var(--card-bg);
+border: 1px solid var(--border);
+border-radius: 10px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+font-size: 0.86rem;
+text-align: left;
+}
+th {
+background: #f1f5f9;
+padding: 10px 14px;
+font-weight: 700;
+color: var(--text-main);
+border-bottom: 1px solid var(--border);
+}
+td {
+padding: 10px 14px;
+border-bottom: 1px solid var(--border);
+color: var(--text-muted);
+}
+tr:last-child td { border-bottom: none; }
+td strong { color: var(--text-main); }
+.action-card {
+background: #ffffff;
+border: 2px solid #0f172a;
+border-radius: 10px;
+padding: 18px 20px;
+margin-top: 24px;
+margin-bottom: 24px;
+}
+.action-card h3 {
+font-size: 1rem;
+font-weight: 800;
+text-transform: uppercase;
+margin-bottom: 12px;
+color: #0f172a;
+}
+.action-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.action-item {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+font-size: 0.88rem;
+}
+.action-num {
+background: #0f172a;
+color: #ffffff;
+font-weight: 800;
+font-size: 0.75rem;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+margin-top: 1px;
+}
+footer {
+color: var(--text-muted);
+font-size: 0.75rem;
+line-height: 1.5;
+margin-top: 8px;
+padding: 0 2px 24px;
+}
+footer p { margin-bottom: 8px; }
+@media (max-width: 600px) {
+.metric-bar { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.card-top { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+@media print {
+body { background: #fff; padding: 8px; }
+.property-card, .action-card, .table-container, .header-card { break-inside: avoid; }
+.badge, .header-card, .metric-bar, th, .action-num, .alert-banner, .note-banner, .pill, .takeaway-box {
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+}
+</style>
+</head><body><div class="container"><header class="header-card"><div class="eyebrow">Weekly Market Intelligence | 6 Oct 2026</div>
+<h1>West &amp; East New Launches Brief</h1><div class="mandate-pill-row"><div class="pill"><span>Budget:</span> ₹1.2 – 1.4 Cr All-In</div>
+<div class="pill"><span>Size:</span> 750+ sq ft Carpet</div>
+<div class="pill"><span>Core micros:</span> Pancard Club Rd / Balewadi High St</div>
+<div class="pill"><span>Coverage:</span> Pune W·E · Andheri · Mulund · Powai</div>
+<div class="pill"><span>Baseline week:</span> 29 Sep 2026</div>
+</div>
+</header>
+<div class="alert-banner"><strong>Time-Critical — Offer Gap + Rate Day:</strong> Meridian’s Privilege Fest <strong>ended 30 Sep</strong> and we found <strong>no extension</strong>. Mantra’s fest page now shows a “coming soon” brand teaser that promises early launch offers, but nothing in writing yet. Festive dates ahead: <strong>Navratri 11–19 Oct</strong>, <strong>Dasara 20 Oct</strong>, <strong>Diwali 8 Nov</strong> — new offers are likely, so don’t pay a token before you see them. <strong>RBI decides rates on 7 Oct</strong>; a rise to 5.50% is widely expected — about ₹800 more a month for every ₹50 L of a 20-year floating loan.
+</div>
+<div class="section-title">Direct Matches (Inside Your Brief)</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.mantraproperties.in/properties/residential/mantra-meridian" target="_blank" rel="noopener">Meridian Riverside</a></div>
+<span class="badge badge-fit">BEST LIFESTYLE MATCH</span></div>
+<div class="card-subtitle">Mantra + Majestique | Near Balewadi High Street | RERA: P52100045688 | Poss: Dec 2028 – Jun 2029 (sources differ)</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">834 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">All-In Price</span><span class="metric-val highlight">₹1.26 Cr*</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹15,100 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Still your best High Street fit. Price did not move after the fest ended: ₹1.26 Cr* for the 834 sq ft 2 BHK (sales-partner sheet), and a fresh Magicbricks listing (3 Oct) also asks ₹1.26 Cr. The ₹20 L fest benefit is gone — ask Mantra in writing what replaces it before Navratri.
+</div>
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://rachanalifestyle.com/bella-casa-royale/tower-o" target="_blank" rel="noopener">Bella Casa Royale (Tower O)</a></div>
+<span class="badge badge-fit">BEST SPACE / VALUE</span></div>
+<div class="card-subtitle">Rachana Lifestyle | Baner–Sus Road | RERA: P52100078291 | Poss: ~Jun 2029</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">956 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">All-In Price</span><span class="metric-val highlight">~₹1.30 Cr (broker)</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹13,600 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Most space for the money in your band, about 11% below the Balewadi average rate. Broker sheet still says ₹1.30 Cr for 956 sq ft (2.5 BHK from ₹1.38 Cr). Rachana still shows no official price — get their own all-in quote so it stays under ₹1.4 Cr.
+</div>
+</div>
+<div class="section-title">Value &amp; Brand Comparators (West Nearby)</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.mahindralifespaces.com/residential/pune-properties/mahindra-rivenza/" target="_blank" rel="noopener">Mahindra Rivenza (NEW)</a></div>
+<span class="badge badge-watch">NEW LAUNCH · 1 OCT</span></div>
+<div class="card-subtitle">Mahindra Lifespaces | Mahalunge (Baner Annex) | RERA: PR1261012602102 / PM1261012602103 | Poss: by Dec 2031</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">635 – 747 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">from ₹93 L*</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹14,650 /sq ft*</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> The only real new launch near Baner this week. Good brand, but every 2 BHK is under your 750 sq ft line (biggest is 747), Mahalunge is not Baner or Balewadi, and handover is end-2031. The rate looks high next to the Mahalunge average (₹12,200). Watch only.
+</div>
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.godrejproperties.com/pune/residential/godrej-park-world/landingpage/the-greenfront-at-godrej-park-world" target="_blank" rel="noopener">Godrej The Greenfront @ Park World</a></div>
+<span class="badge badge-watch">TOWNSHIP COMPARATOR</span></div>
+<div class="card-subtitle">Godrej Properties | Hinjewadi Phase 1 | RERA: P52100079064 | Poss: per RERA</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">943 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">All-In Price</span><span class="metric-val highlight">₹1.19 Cr</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹12,620 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Same price as last week (Godrej page, 6 Oct). Big carpet in budget, but it is a Hinjewadi township, not your Baner/Balewadi life.
+</div>
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.ceratecgroup.com/west-winds" target="_blank" rel="noopener">Ceratec Westwinds (Tower C)</a></div>
+<span class="badge badge-watch">VALUE PLAY</span></div>
+<div class="card-subtitle">Ceratec | Maan / Hinjewadi | RERA: P52100050497 | Poss: Feb 2029 (check vs RERA)</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">738 – 799 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">All-In Price</span><span class="metric-val highlight">₹85 – 89 L (broker)</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹11,100 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Cheapest 2 BHK in the West list. Far from your micros. Prices carried from last week; only useful if saving money beats address.
+</div>
+</div>
+<div class="section-title">Pune East Corridor</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.godrejproperties.com/pune/residential/godrej-ivara" target="_blank" rel="noopener">Godrej Ivara (Upper Kharadi)</a></div>
+<span class="badge badge-watch">EAST CORRIDOR BRAND</span></div>
+<div class="card-subtitle">Godrej Properties | Upper Kharadi | RERA: PR1260002502426 | Poss: Aug 2032</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 / 3 / 4 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">Sheet on request</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">from ₹1.29 Cr*</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">Above ₹14,950 area avg</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> No change: Godrej still says from ₹1.29 Cr*, handover Aug 2032. Strong brand, wrong side of the city for your brief.
+</div>
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.squareyards.com/venkatesh-vanaya-kharadi-pune-npd-345516" target="_blank" rel="noopener">Venkatesh Vanaya (was “New Beginnings”)</a></div>
+<span class="badge badge-watch">EAST PRICE PLAY</span></div>
+<div class="card-subtitle">Shree Venkatesh | Kharadi | RERA: PR1261012601206 / PR1261012601264 (+5 more) | Poss: Aug 2030</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">777 / 848 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">All-In Price</span><span class="metric-val highlight">₹1.12 / 1.17 Cr</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹14,400 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Project now goes by “Vanaya”; old developer link is dead. Square Yards still lists ₹1.12–1.17 Cr. Fair East price, but still East.
+</div>
+</div>
+<div class="note-banner">
+No fresh East 2 BHK launch inside your band this week. Prestige Kharadi: still no MahaRERA number found — do not pay. Birla Evam Manjri (2025 RERA) is not new this week.
+</div>
+<div class="section-title">Mumbai Andheri</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.puravankara.com/residential/mumbai/purva-estrella" target="_blank" rel="noopener">Purva Estrella</a></div>
+<span class="badge badge-out">OUT OF BAND</span></div>
+<div class="card-subtitle">Puravankara | Andheri West / Lokhandwala | RERA: PM1180002502319 | Poss: Jul–Nov 2032</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">750 – 800 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">from ₹3.52 Cr+</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹44,000 – 47,000 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Developer page now says from ₹3.52 Cr+ (we showed a ₹3.38–3.60 Cr broker range last week). About 2.5× your Pune budget. Track only.
+</div>
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://spentacorporation.com/projects/spentaanthea/" target="_blank" rel="noopener">Spenta Anthea</a></div>
+<span class="badge badge-out">OUT OF BAND</span></div>
+<div class="card-subtitle">Spenta Corporation | Four Bungalows / Versova | RERA: PR1180002502840 | Poss: Dec 2029</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">2 BHK</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">679 – 752 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">All-In Price</span><span class="metric-val highlight">₹2.69 – 2.99 Cr</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹39,700 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Cheaper Andheri entry with an earlier handover than Purva, but still about 2× your budget. Prices carried from last week.
+</div>
+</div>
+<div class="section-title">Mumbai Mulund</div>
+<div class="note-banner">
+No new Mulund launch found for 29 Sep – 6 Oct. The project below is 2026 stock, not new this week.
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.foresthills-mulund.co.in/" target="_blank" rel="noopener">Prestige Forest Hills Phase 2</a></div>
+<span class="badge badge-watch">MULUND INVENTORY</span></div>
+<div class="card-subtitle">Prestige Estates | The Prestige City, Mulund West | RERA: PR1181012600556 | Poss: ~Mar 2032</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">3 BHK+</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">946 – 1,500 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">from ~₹2.73 Cr</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹28,800 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Launched 30 Jun 2026; the sales site still says from ₹2.7 Cr*. Close to the Mulund West average (₹29,150). Not your brief.
+</div>
+</div>
+<div class="section-title">Mumbai Powai</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.hiranandanicommunities.com/projects/powai/hiranandani-gardens/rockside-4-bhk-apartments" target="_blank" rel="noopener">Hiranandani Rockside</a></div>
+<span class="badge badge-out">ULTRA LUXURY</span></div>
+<div class="card-subtitle">Hiranandani Communities | Hiranandani Gardens | RERA: PR1180002502729 | Poss: Sep 2030</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">4 BHK only</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">1,729 – 1,945 sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">₹12.45 – 14.01 Cr</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹72,000 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Price yardstick for Powai only. Hines Powai is still “MahaRERA coming soon” (from ₹5.49 Cr*) — not bookable.
+</div>
+</div>
+<div class="section-title">Contextual Reference (Non-Aligned)</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://anp-privado.com/" target="_blank" rel="noopener">ANP Privado (Pancard Club Road)</a></div>
+<span class="badge badge-out">WRONG TICKET</span></div>
+<div class="card-subtitle">ANP Corp | Baner | RERA: PR1260002500840 | Poss: Sep 2031</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">3 BHK minimum</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">1,309+ sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">₹2.65 Cr*</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹20,250 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Your top address, but no 2 BHK and about double your budget. Same price this week. Note: this site is run by a sales partner, not ANP.
+</div>
+</div>
+<div class="property-card"><div class="card-top"><div class="card-title"><a href="https://www.squareyards.com/shapoorji-pallonji-everra-fursungi-pune-npd-343888" target="_blank" rel="noopener">SP Everra (Hadapsar Annexe)</a></div>
+<span class="badge badge-out">WRONG CONFIG</span></div>
+<div class="card-subtitle">Shapoorji Pallonji | Manjri–Hadapsar Annexe | RERA: PR1260002503056 | Poss: Dec 2031</div>
+<div class="metric-bar"><div class="metric-cell"><span class="metric-label">Configuration</span><span class="metric-val">3 BHK minimum</span></div>
+<div class="metric-cell"><span class="metric-label">Carpet Area</span><span class="metric-val">1,156+ sq ft</span></div>
+<div class="metric-cell"><span class="metric-label">Entry Price</span><span class="metric-val highlight">₹1.55 – 1.87 Cr</span></div>
+<div class="metric-cell"><span class="metric-label">Effective Rate</span><span class="metric-val">~₹13,200 /sq ft</span></div>
+</div>
+<div class="takeaway-box"><strong>The Takeaway:</strong> Good brand and price, but no 2 BHK. Out on size and budget. Carried from last week.
+</div>
+</div>
+<div class="note-banner">
+Still not bookable (no MahaRERA number yet): Raymond Baner and Shriram Balewadi — both still “pre-launch” in early October. Don’t pay any “pre-launch” booking amount.
+</div>
+<div class="section-title">Micro-Market Price Baseline (Square Yards)</div>
+<div class="table-container"><table><thead><tr><th>Micro-Market</th><th>Current Average Ask</th><th>Gross Rental Yield</th><th>1-Year Movement</th></tr>
+</thead><tbody><tr><td><strong>Baner</strong></td><td>₹16,400 /sq ft</td><td>3.37%</td><td>Up from ₹14,400</td></tr>
+<tr><td><strong>Balewadi</strong></td><td>₹15,300 /sq ft</td><td>3.61%</td><td>Up from ₹14,400</td></tr>
+<tr><td><strong>Hinjewadi</strong></td><td>₹12,150 /sq ft†</td><td>~4.0%†</td><td>Under-construction +2.6%</td></tr>
+<tr><td><strong>Kharadi</strong></td><td>₹14,950 /sq ft</td><td>4.09%</td><td>Up from ₹13,900</td></tr>
+<tr><td><strong>Andheri West</strong></td><td>₹41,400 /sq ft</td><td>3.77%</td><td>Up from ₹38,350</td></tr>
+<tr><td><strong>Mulund West</strong></td><td>₹29,150 /sq ft</td><td>3.46%</td><td>Up from ₹27,650</td></tr>
+<tr><td><strong>Powai</strong></td><td>₹46,300 /sq ft</td><td>3.34%</td><td>Up from ₹38,150</td></tr>
+</tbody></table>
+</div>
+<div class="action-card"><h3>Immediate Action Checklist</h3><div class="action-list"><div class="action-item"><div class="action-num">1</div>
+<div><strong>Ask Mantra in writing (before Navratri, 11 Oct):</strong> What replaces the ended fest on the 834 sq ft 2 BHK at ₹1.26 Cr*? Get the full cost sheet, and confirm 834 is the RERA carpet.</div>
+</div>
+<div class="action-item"><div class="action-num">2</div>
+<div><strong>Get Rachana’s own all-in quote:</strong> Bella Casa Tower O, 956 sq ft — GST, parking and floor rise included, and it must stay under ₹1.40 Cr. The broker’s ₹1.30 Cr is not enough.</div>
+</div>
+<div class="action-item"><div class="action-num">3</div>
+<div><strong>Check RBI on 7 Oct, then hold the token until Dasara (20 Oct):</strong> Redo your loan EMI after the rate call. Pay only if a written offer beats what festive deals usually bring.</div>
+</div>
+<div class="action-item"><div class="action-num">4</div>
+<div><strong>Rivenza — only if you’d take Mahalunge:</strong> Ask the price of the 747 sq ft 2 BHK. Remember it is just under 750, ready end-2031. Otherwise skip.</div>
+</div>
+<div class="action-item"><div class="action-num">5</div>
+<div><strong>Park:</strong> ANP Privado (look only), Raymond/Shriram (no RERA), East, Hinjewadi and all Mumbai cards.</div>
+</div>
+</div>
+</div>
+<footer><p><strong>Sources (6 Oct 2026 IST):</strong> Developers — mantraproperties.in (Meridian page, RERA only; mantrameridian.co.in fest page now a brand teaser), mahindralifespaces.com (Rivenza RERA carpet, RERA numbers, Dec 2031), rachanalifestyle.com (Tower O carpet/RERA), godrejproperties.com (Ivara, Greenfront), puravankara.com, spentacorporation.com, hiranandanicommunities.com. Sales-partner / broker sites (marked) — mantrasriversidebalewadi.com (Home Bazaar: Meridian 2 BHK 834 / ₹1.26 Cr), purplerealtors.com (Bella Casa Tower O ₹1.30 Cr), anp-privado.com, foresthills-mulund.co.in, hinespowai.co.in; Magicbricks listing 86626427 (3 Oct). Portals — Square Yards locality rates (all seven pages, “Oct 2026” edition, June 2026 data) and Square Yards Venkatesh Vanaya page. Press — EquityBulls / ALFA News / HomesBuildings (Rivenza launch 1 Oct, from ₹93 L), Economic Times / India Today / Moneycontrol (RBI 7 Oct), RealtyPromoo / Synergy Infracon (Raymond, Shriram, Prestige Kharadi still pre-RERA).</p><p><strong>Notes:</strong> Change vs 29 Sep. * = developer “onwards” price or price from press quoting the developer. Rivenza rate assumes ₹93 L is the smallest 2 BHK (635 sq ft) — confirm. † Hinjewadi: Square Yards headline ask; yield worked out from its ₹40/sq ft rent. Formal 5- and 10-year growth figures: not available. Magicbricks project pages down for maintenance / blocked; 99acres 403; Housing 406. Rate per sq ft = price ÷ carpet where both are known. Check RERA carpet and all-in cost before booking. Not financial advice. Format lock: property-intelligence-v1.</p></footer>
+</div>
+</body></html>
